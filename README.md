@@ -415,3 +415,26 @@ function validateEmail(email) {
 <script src="script.js"></script>
 </body>
 </html>
+function addProduct() {
+    alert("زر إضافة منتج يعمل الآن!");
+}
+
+function changeLanguage(language) {
+    if (language === "ar") {
+        document.getElementById("site-title").innerText = "Roott Implant System";
+        document.getElementById("branch-title").innerText = "فرع إسكندرية";
+        document.getElementById("order-title").innerText = "لطلب الأوردر، اضغط هنا:";
+        document.getElementById("add-product-button").innerText = "إضافة منتج";
+        document.getElementById("note-label").innerText = "ملاحظات:";
+        document.getElementById("name-label").innerText = "الاسم:";
+        document.getElementById("footer-text").innerText = "حقوق النشر © 2025 Roott Implant System";
+    } else {
+        document.getElementById("site-title").innerText = "Roott Implant System";
+        document.getElementById("branch-title").innerText = "Alexandria Branch";
+        document.getElementById("order-title").innerText = "To place an order, click here:";
+        document.getElementById("add-product-button").innerText = "Add Product";
+        document.getElementById("note-label").innerText = "Notes:";
+        document.getElementById("name-label").innerText = "Name:";
+        document.getElementById("footer-text").innerText = "Copyright © 2025 Roott Implant System";
+    }
+}
